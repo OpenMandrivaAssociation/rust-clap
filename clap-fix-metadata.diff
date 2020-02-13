@@ -1,0 +1,20 @@
+--- clap-2.33.0/Cargo.toml	1970-01-01T00:00:00+00:00
++++ clap-2.33.0/Cargo.toml	2019-04-07T05:33:50.382036+00:00
+@@ -14,7 +14,7 @@
+ name = "clap"
+ version = "2.33.0"
+ authors = ["Kevin K. <kbknapp@gmail.com>"]
+-exclude = ["examples/*", "clap-test/*", "tests/*", "benches/*", "*.png", "clap-perf/*", "*.dot"]
++exclude = ["examples/*", "clap-test/*", "tests/*", "benches/*", "*.png", "clap-perf/*", "*.dot", "/.appveyor.yml", "/.clog.toml", "/.github/*", "/.mention-bot", "/.travis.yml", "/index.html", "/justfile"]
+ description = "A simple to use, efficient, and full-featured Command Line Argument Parser\n"
+ homepage = "https://clap.rs/"
+ documentation = "https://docs.rs/clap/"
+@@ -68,7 +68,7 @@
+ optional = true
+ 
+ [dependencies.strsim]
+-version = "0.8"
++version = "0.9"
+ optional = true
+ 
+ [dependencies.term_size]
