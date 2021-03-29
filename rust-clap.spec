@@ -1,4 +1,9 @@
+%ifnarch %{armx}
 %bcond_without check
+%else
+# Workaround for rust breakage on some tests on aarch64
+%bcond_with check
+%endif
 %global debug_package %{nil}
 
 %global crate clap
