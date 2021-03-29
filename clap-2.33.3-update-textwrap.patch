@@ -1,0 +1,15 @@
+diff -up clap-2.33.3/src/app/help.rs.omv~ clap-2.33.3/src/app/help.rs
+--- clap-2.33.3/src/app/help.rs.omv~	2021-03-29 14:22:53.231740024 +0200
++++ clap-2.33.3/src/app/help.rs	2021-03-29 14:24:05.478799589 +0200
+@@ -1012,9 +1012,9 @@ impl<'a> Help<'a> {
+ }
+ 
+ fn wrap_help(help: &str, avail_chars: usize) -> String {
+-    let wrapper = textwrap::Wrapper::new(avail_chars).break_words(false);
++    let wrapper = textwrap::Options::new(avail_chars).break_words(false);
+     help.lines()
+-        .map(|line| wrapper.fill(line))
++        .map(|line| textwrap::fill(line, &wrapper))
+         .collect::<Vec<String>>()
+         .join("\n")
+ }
