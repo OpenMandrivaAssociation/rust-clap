@@ -9,7 +9,7 @@
 %global crate clap
 
 Name:           rust-%{crate}
-Version:        2.33.3
+Version:        3.2.7
 Release:        1
 Summary:        Simple to use, efficient, and full-featured Command Line Argument Parser
 
