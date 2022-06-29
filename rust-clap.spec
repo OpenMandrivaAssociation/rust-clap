@@ -20,8 +20,8 @@ Source:         %{crates_source}
 # Initial patched metadata
 # * Exclude useless files
 # * Update strsim to 0.9, https://github.com/clap-rs/clap/pull/1450
-Patch0:         clap-fix-metadata.diff
-Patch1:		clap-2.33.3-update-textwrap.patch
+#Patch0:         clap-fix-metadata.diff
+#Patch1:		clap-2.33.3-update-textwrap.patch
 
 ExclusiveArch:  %{rust_arches}
 %if %{__cargo_skip_build}
