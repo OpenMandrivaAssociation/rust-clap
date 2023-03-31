@@ -10,7 +10,7 @@
 
 Name:           rust-%{crate}
 Version:        2.33.3
-Release:        1
+Release:        2
 Summary:        Simple to use, efficient, and full-featured Command Line Argument Parser
 
 # Upstream license specification: MIT
